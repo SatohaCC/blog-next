@@ -3,11 +3,12 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "prepare": "husky",
+        "prepare": "husky && panda codegen",
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "lint:fix": "next lint --fix"
     },
     "dependencies": {
         "next": "15.1.7",
@@ -29,6 +30,10 @@
         "typescript": "^5"
     },
     "lint-staged": {
-        "**/*": "prettier --write --ignore-unknown"
+        "*.{js,jsx,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md,yml,yaml}": "prettier --write"
     }
 }
