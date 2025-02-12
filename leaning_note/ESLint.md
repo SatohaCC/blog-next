@@ -18,3 +18,7 @@
 - eslint-config-prettierではない。
 - pluginとconfigの違い
 - https://dev.classmethod.jp/articles/eslint-and-prettier/
+
+## https://eslint.org/docs/latest/use/configure/configuration-files
+
+- 拡張子が色々あり、反映に優先順位がある(js,mjs,cjs,ts,mts,cts)
