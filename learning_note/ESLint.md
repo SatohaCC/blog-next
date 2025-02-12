@@ -1,4 +1,6 @@
-# install
+# Prettier
+-
+-
 
 ## https://github.com/prettier/eslint-config-prettier#installation
 

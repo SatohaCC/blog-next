@@ -1,4 +1,4 @@
-# install
+# prettier
 
 ## https://prettier.io/docs/install
 

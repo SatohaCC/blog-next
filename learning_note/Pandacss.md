@@ -1,4 +1,4 @@
-# install
+# pandacss
 
 ## https://panda-css.com/docs/installation/nextjs
 

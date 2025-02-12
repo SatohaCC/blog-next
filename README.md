@@ -22,5 +22,5 @@ npm run dev
 
 ## 学習メモ
 
-- `leaning_note/` ディレクトリに学習過程のメモを残しています
+- `learning_note/` ディレクトリに学習過程のメモを残しています
 - huskyを使ってGitフックを設定中
