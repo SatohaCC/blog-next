@@ -10,6 +10,14 @@ const compat = new FlatCompat({
 });
 
 // Prettierを含めたESLintの設定
-const eslintConfig = [...compat.extends("next/core-web-vitals", "next/typescript", "prettier")];
+const eslintConfig = [
+    ...compat.extends("next/core-web-vitals", "next/typescript", "prettier"),
+    {
+        rules: {
+            semi: "error",
+            "prefer-const": "error",
+        },
+    },
+];
 
 export default eslintConfig;
