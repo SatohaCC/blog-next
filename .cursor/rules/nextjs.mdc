@@ -1,0 +1,27 @@
+---
+description: Next.js App Router best practices
+globs: *tsx, *ts
+---
+---
+description: Next.js App Router best practices
+globs: *tsx, *ts
+---
+
+# Next.js App Router best practices
+- Use server components by default
+- Implement client components only when necessary
+- Utilize the new file-based routing system
+- Use layout.js for shared layouts
+- Implement loading.js for loading states
+- Use error.js for error handling
+- Utilize route handlers for API routes
+
+## Additional instructions
+- Use TypeScript for type safety
+- Implement proper metadata for SEO
+- Utilize Next.js Image component for optimized images
+- Implement proper error boundaries
+- Follow Next.js naming conventions for special files
+- Use environment variables for configuration
+- Create small, reusable components following the Single Responsibility Principle and favor composition over inheritance
+- Use type aliases instead of interfaces for type definitions to ensure consistency and better union type support
