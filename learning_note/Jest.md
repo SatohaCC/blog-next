@@ -47,9 +47,10 @@ test('非同期処理のテスト', async () => {
 - https://nextjs.org/docs/app/building-your-application/testing/jest
 - npm install -D jest jest-environment-jsdom @testing-library/react @testing-library/dom @testing-library/jest-dom ts-node
 - npm init jest@latest
-
-### 絶対インポートとモジュール パス エイリアスの処理
+    - 選択肢は上記URLにある設定にあわせてv8,jsdom
+- import nextJest from 'next/jest.js'の設定を行う
 - tsconfig.json とjest.config.tsのパスを一致させる
+    - 絶対インポートとモジュール パス エイリアスの処理
 
 ### jest.config.tsの設定
 - testPathIgnorePatternsでJestがテストを実行する際に、特定のパスやファイルを無視するために使用。
