@@ -9,7 +9,7 @@ export default function Home() {
                         bg: "red",
                     })}
                 >
-                    aa
+                    Hello World
                 </div>
             </main>
             <footer></footer>
