@@ -1,6 +1,10 @@
 # pandacss
 
-## https://panda-css.com/docs/installation/nextjs
+## 特徴
+- ゼロランタイム
+
+## install
+- https://panda-css.com/docs/installation/nextjs
 
 - npm install -D @pandacss/dev
 - npx panda init --postcss
