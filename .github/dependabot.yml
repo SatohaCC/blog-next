@@ -1,0 +1,26 @@
+# Dependabotの設定バージョン
+version: 2
+updates:
+    # GitHub Actionsの依存関係の更新設定
+    - package-ecosystem: "github-actions"
+      directory: "/" # 監視するディレクトリ（ルート）
+      schedule:
+          interval: "daily" # 毎日更新をチェック
+
+    # npmパッケージの依存関係の更新設定
+    - package-ecosystem: "npm"
+      directory: "/" # package.jsonがあるディレクトリ
+      schedule:
+          interval: "daily" # 毎日更新をチェック
+      # npmの詳細設定
+      open-pull-requests-limit: 10 # 同時に作成できるPRの最大数
+      versioning-strategy: auto # より安全な自動選択戦略
+
+
+      # 利用可能な戦略:
+      # - auto: 依存関係タイプに基づいて自動選択
+      # - increase: 常にバージョンを増やす
+      # - increase-if-necessary: 必要な場合のみ増やす
+      # - lockfile-only: lockfileのみ更新
+      # - widen: バージョン範囲を広げる
+      # - loose: 緩いバージョン制約を使用
