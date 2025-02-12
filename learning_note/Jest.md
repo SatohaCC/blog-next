@@ -50,3 +50,10 @@ test('非同期処理のテスト', async () => {
 
 ### 絶対インポートとモジュール パス エイリアスの処理
 - tsconfig.json とjest.config.tsのパスを一致させる
+
+### jest.config.tsの設定
+- testPathIgnorePatternsでJestがテストを実行する際に、特定のパスやファイルを無視するために使用。
+    - 無視されたファイルはテストされませんが、カバレッジレポートの対象にはなる可能性がある。
+- collectCoverageFromでカバレッジを収集するファイルを指定。カバレッジレポートに含める対象を細かく制御。
+    - !からは除外
+- 併用可能: testPathIgnorePatternsでテストを無視し、collectCoverageFromで特定ファイルをカバレッジから除外することも可能。
