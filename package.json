@@ -11,7 +11,9 @@
         "lint:fix": "next lint --fix",
         "test": "jest",
         "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage"
+        "test:coverage": "jest --coverage",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build"
     },
     "dependencies": {
         "next": "15.1.7",
@@ -20,8 +22,16 @@
         "react-dom": "^19.0.0"
     },
     "devDependencies": {
+        "@chromatic-com/storybook": "^3.2.4",
         "@eslint/eslintrc": "^3",
         "@pandacss/dev": "^0.53.0",
+        "@storybook/addon-essentials": "^8.5.5",
+        "@storybook/addon-interactions": "^8.5.5",
+        "@storybook/addon-onboarding": "^8.5.5",
+        "@storybook/blocks": "^8.5.5",
+        "@storybook/nextjs": "^8.5.5",
+        "@storybook/react": "^8.5.5",
+        "@storybook/test": "^8.5.5",
         "@testing-library/dom": "^10.4.0",
         "@testing-library/jest-dom": "^6.6.3",
         "@testing-library/react": "^16.2.0",
@@ -32,11 +42,13 @@
         "eslint": "^9",
         "eslint-config-next": "15.1.7",
         "eslint-config-prettier": "^10.0.1",
+        "eslint-plugin-storybook": "^0.11.2",
         "husky": "^9.1.7",
         "jest": "^29.7.0",
         "jest-environment-jsdom": "^29.7.0",
         "lint-staged": "^15.4.3",
         "prettier": "3.5.0",
+        "storybook": "^8.5.5",
         "ts-node": "^10.9.2",
         "typescript": "^5"
     },
@@ -46,5 +58,10 @@
             "prettier --write"
         ],
         "*.{json,md,yml,yaml}": "prettier --write"
+    },
+    "eslintConfig": {
+        "extends": [
+            "plugin:storybook/recommended"
+        ]
     }
 }
