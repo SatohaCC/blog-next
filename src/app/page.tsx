@@ -1,4 +1,4 @@
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/Button/button";
 import { css } from "styled-system/css";
 
 export default function Home() {
