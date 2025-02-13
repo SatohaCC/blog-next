@@ -35,14 +35,7 @@
 - `toMatch()`: 文字列が正規表現にマッチするか
 - `toBeTruthy()` / `toBeFalsy()`: 真偽値のチェック
 
-### 非同期テスト
 
-```javascript
-test('非同期処理のテスト', async () => {
-  const data = await fetchData();
-  expect(data).toBeDefined();
-});
-```
 ## install
 - https://nextjs.org/docs/app/building-your-application/testing/jest
 - npm install -D jest jest-environment-jsdom @testing-library/react @testing-library/dom @testing-library/jest-dom ts-node
@@ -58,3 +51,6 @@ test('非同期処理のテスト', async () => {
 - collectCoverageFromでカバレッジを収集するファイルを指定。カバレッジレポートに含める対象を細かく制御。
     - !からは除外
 - 併用可能: testPathIgnorePatternsでテストを無視し、collectCoverageFromで特定ファイルをカバレッジから除外することも可能。
+
+### jest.setup.ts
+- ここでインポートしておいてconfigで設定しておくと、テストファイル毎にインポートしないでいい
