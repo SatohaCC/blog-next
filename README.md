@@ -5,7 +5,7 @@ Next.jsを使って個人ブログを作成中です。
 
 ## 使用技術
 
-- [Next.js](https://nextjs.org) - Reactベースのフルスタックフレームワーク
+- [Next.js](https://nextjs.org) - Reactのフレームワーク
 - TypeScript - 型安全な開発
 - [Panda CSS](https://panda-css.com) - モダンなCSS-in-JSソリューション
 - [React Aria Components](https://react-spectrum.adobe.com/react-aria/index.html) - アクセシブルなUIコンポーネント
