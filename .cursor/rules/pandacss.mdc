@@ -1,0 +1,21 @@
+---
+description: Panda CSS best practices
+globs: *.recipe.ts
+---
+---
+description: Panda CSS best practices
+globs: *.recipe.ts
+---
+
+# recipe rule
+- use Config Recipe
+- dont use Atomic Recipe (cva)
+
+
+# Best Practices
+- Leverage css variables in the base styles as much as possible. Makes it easier to theme the component with JS
+- Don't mix styles by writing complex selectors. Separate concerns and group them in logical variants
+- Use the compoundVariants property to create more complex sets of styles
+- Recipes created from cva cannot have responsive or conditional values. Only layer recipes can have responsive or conditional values.
+- Due to static nature of Panda, it's not possible to track the usage of the recipes in all cases. Here are some of use cases that Panda won't be able to track the -
+- usage of the recipe variants:
