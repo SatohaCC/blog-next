@@ -1,4 +1,4 @@
-import { buttonRecipe } from "@/components/ui/Button/Button.recipe";
+import { buttonRecipe } from "@/components/ui/Button/button.recipe";
 import { defineConfig } from "@pandacss/dev";
 
 export default defineConfig({
