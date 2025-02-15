@@ -18,3 +18,9 @@
 - Config recipe	と　Atomic recipe (cva)　がある
     - https://panda-css.com/docs/concepts/recipes
     - cvaはatomic classesが生成される
+
+### Dynamic styling
+- https://panda-css.com/docs/guides/dynamic-styling#referenced-values
+- NG
+    - スタイルの設定は同じファイル内
+    - 関数呼び出し結果の変数
