@@ -9,6 +9,7 @@ Next.jsを使って個人ブログを作成中です。
 - TypeScript - 型安全な開発
 - [Panda CSS](https://panda-css.com) - モダンなCSS-in-JSソリューション
 - [React Aria Components](https://react-spectrum.adobe.com/react-aria/index.html) - アクセシブルなUIコンポーネント
+- [MicroCMS](https://microcms.io) - ヘッドレスCMS
 - Jest & Testing Library - テスト環境
 - ESLint & Prettier - コード品質管理
 - Husky & lint-staged - Git フック管理
@@ -27,3 +28,10 @@ npm run dev
 ## 学習メモ
 
 - `learning_note/` ディレクトリに学習過程のメモを残しています
+
+## コンテンツ管理
+
+このブログはMicroCMSを使用してコンテンツを管理しています。MicroCMSは日本製のヘッドレスCMSで、APIを通じてコンテンツの取得・管理が可能です。
+
+- ブログ記事の作成・編集
+- カテゴリー管理
