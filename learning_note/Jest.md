@@ -50,7 +50,14 @@
     - 無視されたファイルはテストされませんが、カバレッジレポートの対象にはなる可能性がある。
 - collectCoverageFromでカバレッジを収集するファイルを指定。カバレッジレポートに含める対象を細かく制御。
     - !からは除外
+    - Panda CSSのrecipeを除外
+    - Storybookのstoriesを除外
+    ### TODO
+    - カバレッジテストなにでやるべきか調べる
+        - jest,Storybook,インタラクションテストなど
+
 - 併用可能: testPathIgnorePatternsでテストを無視し、collectCoverageFromで特定ファイルをカバレッジから除外することも可能。
+
 
 ### jest.setup.ts
 - ここでインポートしておいてconfigで設定しておくと、テストファイル毎にインポートしないでいい
