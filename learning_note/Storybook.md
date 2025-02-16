@@ -17,3 +17,12 @@
 ## tsconfig.jsonでpath aliasesを設定しるいる場合
 - storybookでこれらのimportを動作させるために、.storybook/main.tsに設定がいる
     - webpackFinalの部分
+
+## React Server Components (RSC)の表示の仕方
+- [React Server Components (RSC)](https://storybook.js.org/docs/get-started/frameworks/nextjs#react-server-components-rsc)
+- .storybook/main.tsの設定
+-
+    - サーバー コンポーネントがファイル システムや Node 固有のライブラリなどのサーバー側リソースにアクセスする場合
+        - npm install -D storybook-addon-module-mock
+    - サーバー コンポーネントがネットワーク経由でデータにアクセスする場合
+        - npm i msw msw-storybook-addon -D
