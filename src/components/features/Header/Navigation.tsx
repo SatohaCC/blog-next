@@ -1,9 +1,8 @@
-import { ParentCategoriesEntity } from "@/lib/types";
-import { MicroCMSContentId, MicroCMSDate } from "microcms-js-sdk";
+import { HeaderProps } from "@/lib/types";
 import { css } from "styled-system/css";
 
 type Props = {
-    contents: (ParentCategoriesEntity & MicroCMSContentId & MicroCMSDate)[];
+    contents: HeaderProps;
 };
 
 const Navigation = ({ contents }: Props) => (
