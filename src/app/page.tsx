@@ -7,6 +7,8 @@ export default function Home() {
                 <div>
                     <div>Hello World</div>
                     <Button>aae</Button>
+                    <Button>aae</Button>
+                    <Button>aae</Button>
                 </div>
             </main>
             <footer></footer>
