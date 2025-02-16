@@ -24,3 +24,11 @@
 - NG
     - スタイルの設定は同じファイル内
     - 関数呼び出し結果の変数
+
+## Storybook
+- https://panda-css.com/docs/installation/storybook
+- .storybook/preview.ts
+    - import "../src/globals.css" (index.css)する
+- Dark Mode
+    - npm i -D @storybook/addon-themes
+    - - .storybook/preview.ts にdecoratorsを追加する
