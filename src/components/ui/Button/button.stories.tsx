@@ -1,9 +1,7 @@
 import { jest } from "@storybook/jest";
-
+import type { Meta, StoryObj } from "@storybook/react";
 import { css } from "styled-system/css";
 import { button } from "styled-system/recipes/button";
-
-import type { Meta, StoryObj } from "@storybook/react";
 import Button from "./button";
 
 const fn = jest.fn();
