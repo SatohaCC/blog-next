@@ -1,3 +1,5 @@
+import { MicroCMSContentId, MicroCMSDate } from "microcms-js-sdk";
+
 // MicroCMSの型定義
 export type ArticleType = {
     id: string;
@@ -53,3 +55,5 @@ export type portfolioType = {
     linkType: string;
     text: string[];
 };
+
+export type HeaderProps = (ParentCategoriesEntity & MicroCMSContentId & MicroCMSDate)[];

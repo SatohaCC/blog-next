@@ -10,11 +10,9 @@ const Navigation = ({ contents }: Props) => (
     <div
         className={css({
             display: "flex",
-            fontSize: "2xl",
+            fontSize: "lg",
             gap: "20px",
-            position: "absolute",
-            left: "50%",
-            transform: "translateX(-50%)",
+            alignItems: "center",
         })}
     >
         {contents?.map((content) => <div key={content.id}>{content.label}</div>)}
