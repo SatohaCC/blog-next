@@ -8,8 +8,10 @@ type Props = {
 const Navigation = ({ contents }: Props) => (
     <div
         className={css({
-            display: "flex",
-            fontSize: "lg",
+            flex: 1,
+            display: { base: "none", md: "flex" },
+            justifyContent: "center",
+            fontSize: { base: "md", lg: "md" },
             gap: "20px",
             alignItems: "center",
         })}

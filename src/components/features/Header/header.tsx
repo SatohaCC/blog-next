@@ -22,13 +22,14 @@ const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
                 bg: "white",
                 zIndex: 200,
                 display: "flex",
-                justifyContent: "space-between",
                 alignItems: "baseline",
             })}
         >
-            <Logo />
+            <div className={css({ flex: 1 })}>
+                <Logo />
+            </div>
             <Navigation contents={contents} />
-            <div>◆</div>
+            <div className={css({ flex: 1, textAlign: "right" })}>◆</div>
         </div>
     </header>
 );
