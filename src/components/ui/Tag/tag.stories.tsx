@@ -61,13 +61,33 @@ export const AllTags = {
                 <div>
                     <h2 className={css({ my: 2 })}>アウトラインタグ（Outline）</h2>
                     <div className={css({ display: "flex", gap: 4, alignItems: "center" })}>
-                        <Tag visual="outline">Tag</Tag>
+                        <Tag visual="outline" size="lg">
+                            Tag
+                        </Tag>
+                        <Tag visual="outline" size="md">
+                            Tag
+                        </Tag>
+                        <Tag visual="outline" size="sm">
+                            Tag
+                        </Tag>
+                        <Tag visual="outline" size="xs">
+                            Tag
+                        </Tag>
                     </div>
                 </div>{" "}
                 <div>
                     <h2 className={css({ my: 2 })}>アウトラインタグ（Outline isDisabled）</h2>
                     <div className={css({ display: "flex", gap: 4, alignItems: "center" })}>
-                        <Tag visual="outline" isDisabled>
+                        <Tag visual="outline" size="lg" isDisabled>
+                            Tag
+                        </Tag>
+                        <Tag visual="outline" size="md" isDisabled>
+                            Tag
+                        </Tag>
+                        <Tag visual="outline" size="sm" isDisabled>
+                            Tag
+                        </Tag>
+                        <Tag visual="outline" size="xs" isDisabled>
                             Tag
                         </Tag>
                     </div>
