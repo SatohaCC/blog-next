@@ -3,6 +3,7 @@ import Navigation from "@/components/features/Header/Navigation";
 import { getMenu } from "@/lib/microcms";
 import { MENU_REVALIDATE } from "@/lib/siteInfo";
 import { HeaderProps } from "@/lib/types";
+import Image from "next/image";
 import { css } from "styled-system/css";
 
 export const revalidate = MENU_REVALIDATE;
@@ -22,14 +23,24 @@ const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
                 bg: "white",
                 zIndex: 200,
                 display: "flex",
-                alignItems: "baseline",
+                alignItems: "center",
             })}
         >
             <div className={css({ flex: 1 })}>
                 <Logo />
             </div>
             <Navigation contents={contents} />
-            <div className={css({ flex: 1, textAlign: "right" })}>◆</div>
+            <div
+                className={css({
+                    flex: 1,
+                    textAlign: "right",
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    alignItems: "center",
+                })}
+            >
+                <Image src="/github-mark.svg" alt="icon" width={20} height={20} />
+            </div>
         </div>
     </header>
 );
