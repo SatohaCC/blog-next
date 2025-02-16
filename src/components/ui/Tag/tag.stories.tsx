@@ -7,7 +7,7 @@ import Tag from "./tag";
 const fn = jest.fn();
 
 const meta = {
-    title: "Example/Tag",
+    title: "UI/Tag",
     component: Tag,
     tags: ["autodocs"],
     argTypes: {

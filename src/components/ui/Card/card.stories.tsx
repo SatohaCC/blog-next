@@ -6,7 +6,7 @@ import Card from "./card";
 const fn = jest.fn();
 
 const meta = {
-    title: "Example/Card",
+    title: "UI/Card",
     component: Card,
     tags: ["autodocs"],
     argTypes: {

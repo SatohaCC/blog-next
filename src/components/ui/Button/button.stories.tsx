@@ -7,7 +7,7 @@ import Button from "./button";
 const fn = jest.fn();
 
 const meta = {
-    title: "Example/Button",
+    title: "UI/Button",
     component: Button,
     tags: ["autodocs"],
     argTypes: {
