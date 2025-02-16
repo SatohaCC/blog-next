@@ -112,6 +112,26 @@ export const buttonRecipe = defineRecipe({
                     },
                 },
             },
+            currentPage: {
+                bg: "teal.600",
+                color: "white",
+                p: "2",
+                justifyItems: "center",
+            },
+            otherPages: {
+                color: "gray.500",
+                borderWidth: "1px",
+                borderColor: "gray.500",
+                _hover: {
+                    color: "gray.700",
+                    borderColor: "gray.700",
+                },
+                _focus: {
+                    outlineOffset: "1px",
+                    outline: "2px solid",
+                    outlineColor: "gray.700",
+                },
+            },
         },
         size: {
             lg: {
