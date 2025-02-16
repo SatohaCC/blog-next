@@ -16,12 +16,11 @@ const meta = {
             control: { type: "radio" },
             description: "ボタンのスタイル",
         },
-        // size: {
-        //     options: tag.variantMap.size,
-        //     control: { type: "radio" },
-        //     description: "ボタンのサイズ",
-
-        // },
+        size: {
+            options: tag.variantMap.size,
+            control: { type: "radio" },
+            description: "ボタンのサイズ",
+        },
         isDisabled: {
             control: { type: "boolean" },
             description: "ボタンを無効にする",
@@ -50,6 +49,7 @@ type Story = StoryObj<typeof meta>;
 export const Playground: Story = {
     args: {
         visual: "outline",
+        size: "xs",
         children: "Tag",
     },
 };
