@@ -2,7 +2,7 @@ export const myName = "Satoha";
 export const siteName = "Satoha's Blog";
 export const siteDescription = "Satoha's Blog:Tech,Medical,Life";
 
-export const PER_PAGE = 10;
+export const PER_PAGE = 5;
 
 export const ARTICLE_REVALIDATE = 60 * 60 * 24;
 export const PAGINATION_REVALIDATE = 60 * 60;
