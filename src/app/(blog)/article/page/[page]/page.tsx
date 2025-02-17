@@ -9,11 +9,10 @@ export async function generateStaticParams() {
     return getPaths({ totalCount });
 }
 // メタデータの追加
-export const generateMetadata = async ({
-    params,
-}: {
-    params: { page: string };
+export const generateMetadata = async (props: {
+    params: Promise<{ page: string }>;
 }): Promise<Metadata> => {
+    const params = await props.params;
     return {
         title: `記事一覧 - ページ${params.page}`,
         description: `ブログの記事一覧ページです。${params.page}ページ目を表示しています。`,
