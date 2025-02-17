@@ -7,8 +7,11 @@ type Props = {
     currentPage: number;
 };
 
-export const PaginationButton = ({ page, currentPage, category }: Props) => (
-    <Link href={`/${category}/page/${page}`}>
-        <Button className={page === currentPage ? "currentPage" : "otherPages"}>{page}</Button>
-    </Link>
-);
+export const PaginationButton = ({ page, currentPage, category }: Props) => {
+    const buttonStyle = page === currentPage ? "currentPage" : "otherPages";
+    return (
+        <Link href={`/${category}/page/${page}`}>
+            <Button visual={buttonStyle}>{page}</Button>
+        </Link>
+    );
+};
