@@ -19,7 +19,9 @@ const Card = ({ content }: CardProps) => {
                 <div className={classes.title}>{title}</div>
             </Link>
             <div className={classes.description}>{summary}</div>
-            <div className={classes.tags}>{categories.join(", ")}</div>
+            <div className={classes.tags}>
+                {categories.map((category) => category.label).join(", ")}
+            </div>
         </div>
     );
 };
