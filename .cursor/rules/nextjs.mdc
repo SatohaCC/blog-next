@@ -28,36 +28,12 @@ globs: *tsx, *ts
 - Create small, reusable components following the Single Responsibility Principle and favor composition over inheritance
 - Use type aliases instead of interfaces for type definitions to ensure consistency and better union type support
 
+## Accessibility (a11y)
+- Use semantic HTML elements.
+- Implement proper ARIA attributes.
+- Ensure keyboard navigation support.
 
+## Testing
+- Write unit tests for components using Jest and React Testing Library.
+- Implement integration tests for critical user flows.
 
-
- ## Accessibility (a11y)
-  - Use semantic HTML elements.
-  - Implement proper ARIA attributes.
-  - Ensure keyboard navigation support.
-
-##  Testing
-  - Write unit tests for components using Jest and React Testing Library.
-  - Implement integration tests for critical user flows.
-  - Use snapshot testing judiciously.
-
-  Security
-  - Sanitize user inputs to prevent XSS attacks.
-  - Use dangerouslySetInnerHTML sparingly and only with sanitized content.
-
-  Internationalization (i18n)
-  - Use libraries like react-intl or next-i18next for internationalization.
-
-  Key Conventions
-  - Use 'nuqs' for URL search parameter state management.
-  - Optimize Web Vitals (LCP, CLS, FID).
-  - Limit 'use client':
-    - Favor server components and Next.js SSR.
-    - Use only for Web API access in small components.
-    - Avoid for data fetching or state management.
-  - Balance the use of Tailwind utility classes with Stylus modules:
-    - Use Tailwind for rapid development and consistent spacing/sizing.
-    - Use Stylus modules for complex, unique component styles.
-
-  Follow Next.js docs for Data Fetching, Rendering, and Routing.
-    
