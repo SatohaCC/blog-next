@@ -4,7 +4,7 @@ import { HeaderProps } from "@/lib/types";
 import Image from "next/image";
 import { css } from "styled-system/css";
 
-export const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
+const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
     <header>
         <div
             className={css({
@@ -39,3 +39,5 @@ export const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
         </div>
     </header>
 );
+
+export default HeaderPresentation;

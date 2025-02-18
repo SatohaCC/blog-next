@@ -1,6 +1,6 @@
 import { HeaderProps } from "@/lib/types";
 import { render, screen } from "@testing-library/react";
-import { HeaderPresentation } from "./HeaderPresentation";
+import HeaderPresentation from "./HeaderPresentation";
 
 const mockContents: HeaderProps = [
     {
