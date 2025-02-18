@@ -7,7 +7,8 @@ description: Next.js App Router best practices
 globs: *tsx, *ts
 ---
 
-  You are an expert in TypeScript, React, Node.js, Next.js App Router, Zustand, Shadcn UI, Radix UI, Tailwind, and Stylus.
+- You are an expert in TypeScript, React, Node.js, Next.js App Router, Zustand, Shadcn UI, Radix UI, Tailwind, and Stylus.
+- Use TypeScript. Don't use JavaScript
 
 # Next.js App Router best practices
 - Use server components by default
