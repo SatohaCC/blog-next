@@ -34,3 +34,5 @@
 ## husky installは非推奨になった
 - https://github.com/typicode/husky/releases/tag/v9.0.1
 - "prepare": "husky"だけでOK
+- https://github.com/typicode/husky/releases/tag/v9.1.1
+    - #!/usr/bin/env sh、. "$(dirname -- "$0")/_/husky.sh"も非推奨になっている
