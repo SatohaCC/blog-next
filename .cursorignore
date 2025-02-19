@@ -1,0 +1,18 @@
+# .env
+.env
+.env.*
+
+# node_modules
+node_modules/*
+
+# husky
+.husky/*
+
+# learning_note
+learning_note/*
+
+# .gitignore
+.gitignore
+
+# testing
+coverage/
