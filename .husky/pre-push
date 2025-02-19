@@ -1,7 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm test || {
-    echo "❌ テストが失敗しました。pushを中止します。"
-    exit 1
-}
+npm run test
