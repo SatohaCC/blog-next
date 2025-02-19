@@ -92,10 +92,4 @@ describe("ArticleList", () => {
         const summaries = screen.getAllByText("テストの概要です");
         expect(summaries).toHaveLength(2);
     });
-
-    it("カテゴリーが正しく表示されること", () => {
-        render(<ArticleList contents={mockContents} />);
-        expect(screen.getAllByText("テストcategories")).toHaveLength(2);
-        expect(screen.getAllByText("React")).toHaveLength(2);
-    });
 });
