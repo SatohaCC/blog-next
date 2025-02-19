@@ -80,4 +80,22 @@ describe("ArticleList", () => {
 
         expect(screen.getByText("No contents")).toBeInTheDocument();
     });
+
+    it("記事のタイトルが正しく表示されること", () => {
+        render(<ArticleList contents={mockContents} />);
+        expect(screen.getByText("テスト記事")).toBeInTheDocument();
+        expect(screen.getByText("テスト記事2")).toBeInTheDocument();
+    });
+
+    it("記事のサマリーが正しく表示されること", () => {
+        render(<ArticleList contents={mockContents} />);
+        const summaries = screen.getAllByText("テストの概要です");
+        expect(summaries).toHaveLength(2);
+    });
+
+    it("カテゴリーが正しく表示されること", () => {
+        render(<ArticleList contents={mockContents} />);
+        expect(screen.getAllByText("テストcategories")).toHaveLength(2);
+        expect(screen.getAllByText("Reacdt")).toHaveLength(2);
+    });
 });
