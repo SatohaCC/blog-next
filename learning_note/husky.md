@@ -36,3 +36,10 @@
 - "prepare": "husky"だけでOK
 - https://github.com/typicode/husky/releases/tag/v9.1.1
     - #!/usr/bin/env sh、. "$(dirname -- "$0")/_/husky.sh"も非推奨になっている
+
+## testをどこにいれるか
+## 主なGitフック
+- pre-commit: コミット前に実行
+    - こっちにテストまでいれると少し煩わしい
+- pre-push: プッシュ前に実行
+    - こっちにテストを入れて様子見るが、テストでエラーが出ると、最新をPullするような指示のエラーになってしまう
