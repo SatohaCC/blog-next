@@ -25,7 +25,7 @@ export default function BlogPostPresentation({
             <h1>{title}</h1>
             <div>作成:{publishedAt}</div>
             <div>更新:{updatedAt}</div>
-            <p className={css({ py: "5" })}>{summary}</p>
+            <p className={css({ py: "1" })}>{summary}</p>
             <div className={css({ pt: "5" })}>{parse(body)}</div>
             <Box pt={10}>
                 <BackBtn />
