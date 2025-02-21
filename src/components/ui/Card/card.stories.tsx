@@ -9,25 +9,7 @@ const meta = {
     title: "UI/Card",
     component: Card,
     tags: ["autodocs"],
-    argTypes: {
-        title: {
-            control: "text",
-            description: "カードのタイトル",
-        },
-        description: {
-            control: "text",
-            description: "カードの説明文",
-        },
-        date: {
-            control: "text",
-            description: "日付",
-        },
-        variant: {
-            control: "select",
-            options: ["outline", "filled"],
-            description: "カードのスタイルバリアント",
-        },
-    },
+
     parameters: {
         nextjs: {
             router: {
@@ -49,24 +31,53 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        title: "記事タイトル",
-        description: "記事の説明文がここに入ります。",
-        date: "2025/02/16",
-        tags: ["タグ1", "タグ2"],
+        content: {
+            id: "1",
+            title: "サンプル記事",
+            summary: "記事の説明文がここに入ります。",
+            body: "記事の本文です。",
+            publishedAt: "2025-02-16T00:00:00+09:00",
+            createdAt: "2025-02-16T00:00:00+09:00",
+            updatedAt: "2025-02-16T00:00:00+09:00",
+            revisedAt: "2025-02-16T00:00:00+09:00",
+            categories: [
+                {
+                    id: "1",
+                    label: "タグ1",
+                    createdAt: "2024-03-20T00:00:00+09:00",
+                    updatedAt: "2024-03-20T00:00:00+09:00",
+                    publishedAt: "2024-03-20T00:00:00+09:00",
+                    revisedAt: "2024-03-20T00:00:00+09:00",
+                    href: "/categories/1",
+                },
+                {
+                    id: "2",
+                    label: "タグ2",
+                    createdAt: "2024-03-20T00:00:00+09:00",
+                    updatedAt: "2024-03-20T00:00:00+09:00",
+                    publishedAt: "2024-03-20T00:00:00+09:00",
+                    revisedAt: "2024-03-20T00:00:00+09:00",
+                    href: "/categories/2",
+                },
+            ],
+        },
     },
 };
 
 export const Filled: Story = {
     args: {
-        ...Default.args,
-        variant: "filled",
+        content: {
+            ...Default.args.content,
+        },
     },
 };
 
 export const LongContent: Story = {
     args: {
-        ...Default.args,
-        description:
-            "とても長い説明文を含むカード。テキストが長い場合の表示を確認するためのケースです。この文章は表示の確認用のダミーテキストです。",
+        content: {
+            ...Default.args.content,
+            summary:
+                "とても長い説明文を含むカード。テキストが長い場合の表示を確認するためのケースです。この文章は表示の確認用のダミーテキストです。とても長い説明文を含むカード。テキストが長い場合の表示を確認するためのケースです。この文章は表示の確認用のダミーテキストです。",
+        },
     },
 };
