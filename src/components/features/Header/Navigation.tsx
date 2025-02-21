@@ -18,7 +18,7 @@ const Navigation = ({ contents }: Props) => (
         })}
     >
         {contents?.map((content) => (
-            <Link key={content.id} href={content.href}>
+            <Link key={content.id} href={`/${content.href}/page/1`}>
                 {content.label}
             </Link>
         ))}
