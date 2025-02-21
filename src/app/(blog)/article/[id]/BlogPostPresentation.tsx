@@ -1,4 +1,5 @@
 import BackBtn from "@/components/ui/BackBtn/BackBtn";
+import "highlight.js/styles/a11y-dark.css";
 import parse from "html-react-parser";
 
 import { css } from "styled-system/css";
