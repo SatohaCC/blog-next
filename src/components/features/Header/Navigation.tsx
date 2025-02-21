@@ -1,3 +1,4 @@
+import Link from "@/components/ui/Link/link";
 import { HeaderProps } from "@/lib/types";
 import { css } from "styled-system/css";
 
@@ -16,7 +17,11 @@ const Navigation = ({ contents }: Props) => (
             alignItems: "center",
         })}
     >
-        {contents?.map((content) => <div key={content.id}>{content.label}</div>)}
+        {contents?.map((content) => (
+            <Link key={content.id} href={content.href}>
+                {content.label}
+            </Link>
+        ))}
     </div>
 );
 

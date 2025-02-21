@@ -14,7 +14,7 @@ const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
                 borderBottomColor: "gray.200",
                 maxW: "1280px",
                 margin: "0 auto",
-                px: "5",
+                px: "10",
                 bg: "white",
                 zIndex: 200,
                 display: "flex",
