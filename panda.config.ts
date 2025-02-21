@@ -46,6 +46,49 @@ export default defineConfig({
             h: "full", // 高さ100%
             overflowY: "scroll", // 縦スクロールを常に表示
         },
+        body: {
+            marginTop: "0", // body の上マージンをリセット
+        },
+        fonts: {
+            body: "system-ui, sans-serif", // 本文用フォント
+            mono: "Menlo, monospace", // コード用フォント
+        },
+        a: {
+            cursor: "pointer", // カーソルをポインターに
+        },
+        h1: {
+            fontSize: { base: "lg", md: "2xl" },
+            fontWeight: "700",
+            letterSpacing: "tight",
+
+            pb: "3",
+        },
+        h2: {
+            fontSize: { base: "xl", md: "xl" },
+            fontWeight: "600",
+        },
+        h3: {
+            fontSize: { base: "lg", md: "xl" },
+            fontWeight: "600",
+            mt: "6",
+            mb: "3",
+        },
+        p: {
+            fontSize: { base: "md", md: "lg" },
+            lineHeight: "1.8",
+            letterSpacing: "0.02em",
+            my: "4",
+        },
+        ol: {
+            listStyleType: "decimal", // 番号付きリストのスタイル
+            listStylePosition: "inside", // リストの位置
+        },
+        blockquote: {
+            m: "20px", // 引用部分のマージン
+            pl: "10px", // 引用部分の左パディング
+            borderLeftWidth: "4px", // 引用部分の左ボーダー幅
+            borderLeftColor: "#f86c3d", // 引用部分の左ボーダー色
+        },
     },
 
     // The output directory for your css system
