@@ -9,7 +9,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
 
     const content = await getBlogPost(id);
 
-    const publishedAt = dayjs(content.publishedAt).format("YYYYYY.MM.DD");
+    const publishedAt = dayjs(content.publishedAt).format("YYYY.MM.DD");
     const updatedAt = dayjs(content.updatedAt).format("YYYY.MM.DD");
 
     const newContent = await processer(content.body, {
