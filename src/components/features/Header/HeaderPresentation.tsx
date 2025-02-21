@@ -21,9 +21,7 @@ const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
                 alignItems: "center",
             })}
         >
-            <div className={css({ flex: 1 })}>
-                <Logo />
-            </div>
+            <Logo />
             <Navigation contents={contents} />
             <div
                 className={css({
