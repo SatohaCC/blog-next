@@ -41,6 +41,12 @@ export default defineConfig({
             },
         },
     },
+    globalCss: {
+        html: {
+            h: "full", // 高さ100%
+            overflowY: "scroll", // 縦スクロールを常に表示
+        },
+    },
 
     // The output directory for your css system
     outdir: "styled-system",
