@@ -1,8 +1,8 @@
 import Logo from "@/components/features/Header/Logo";
 import Navigation from "@/components/features/Header/Navigation";
 import { HeaderProps } from "@/lib/types";
-import Image from "next/image";
 import { css } from "styled-system/css";
+import Profile from "./Profile";
 
 const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
     <header>
@@ -15,6 +15,7 @@ const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
                 maxW: "1280px",
                 margin: "0 auto",
                 px: "10",
+                py: "1",
                 bg: "white",
                 zIndex: 200,
                 display: "flex",
@@ -23,17 +24,7 @@ const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
         >
             <Logo />
             <Navigation contents={contents} />
-            <div
-                className={css({
-                    flex: 1,
-                    textAlign: "right",
-                    display: "flex",
-                    justifyContent: "flex-end",
-                    alignItems: "center",
-                })}
-            >
-                <Image src="/github-mark.svg" alt="icon" width={20} height={20} />
-            </div>
+            <Profile />
         </div>
     </header>
 );
