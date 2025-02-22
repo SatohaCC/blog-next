@@ -1,12 +1,24 @@
 import ArticleList from "@/components/features/ArticleList/ArticleList";
 import Pagination from "@/components/features/Pagination/pagination";
 import { getList, getMenu, getPaths } from "@/lib/microcms";
-import { PER_PAGE } from "@/lib/siteInfo";
+import { PER_PAGE, siteName } from "@/lib/siteInfo";
+import { Metadata } from "next/types";
 
 export async function generateStaticParams() {
     const { contents, totalCount } = await getMenu();
     return getPaths({ contents, totalCount });
 }
+
+// メタデータの追加
+export const generateMetadata = async (props: {
+    params: Promise<{ category: string; page: string }>;
+}): Promise<Metadata> => {
+    const params = await props.params;
+    return {
+        title: `${siteName} - ${params.category}- ${params.page}`,
+        description: `${siteName} の ${params.category}記事一覧ページです。${params.page}ページ目を表示しています。`,
+    };
+};
 
 type Props = {
     params: Promise<{ category: string; page: string }>;

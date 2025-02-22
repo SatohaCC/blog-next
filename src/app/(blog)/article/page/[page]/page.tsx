@@ -3,7 +3,7 @@ import { Metadata } from "next/types";
 import ArticleList from "@/components/features/ArticleList/ArticleList";
 import Pagination from "@/components/features/Pagination/pagination";
 import { getList, getPaths } from "@/lib/microcms";
-import { PER_PAGE } from "../../../../../lib/siteInfo";
+import { PER_PAGE, siteName } from "../../../../../lib/siteInfo";
 
 export async function generateStaticParams() {
     const { totalCount } = await getList();
@@ -15,8 +15,8 @@ export const generateMetadata = async (props: {
 }): Promise<Metadata> => {
     const params = await props.params;
     return {
-        title: `記事一覧 - ページ${params.page}`,
-        description: `ブログの記事一覧ページです。${params.page}ページ目を表示しています。`,
+        title: `${siteName} - 記事一覧 - ${params.page}`,
+        description: `${siteName} の記事一覧ページです。${params.page}ページ目を表示しています。`,
     };
 };
 
