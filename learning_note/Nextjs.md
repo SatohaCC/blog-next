@@ -8,3 +8,8 @@
 - React Aria ComponentsのLinkと合わせるときrole="link"が重複するので避ける
 - React Aria ComponentsのLinkはspanでrole="link"を生成する
 - v13.0.0からは子<a>タグは不要。
+
+## SEO
+### metadata
+- https://nextjs.org/docs/app/building-your-application/optimizing/metadata#static-metadata
+-
