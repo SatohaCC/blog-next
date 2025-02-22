@@ -13,7 +13,7 @@ Next.jsを使って個人ブログを作成中です。
 - Jest & Testing Library - テスト環境
 - ESLint & Prettier - コード品質管理
 - Husky & lint-staged - Git フック管理
-- [Cursor](https://cursor.sh) - AIアシスト機能付きエディタ
+- [Cursor](https://www.cursor.com/ja) - AIアシスト機能付きエディタ
 
 ## 開発環境のセットアップ
 
@@ -30,8 +30,12 @@ npm test
 # リントチェック
 npm run lint
 
-# ビルド
+# ビルド（本番用）
 npm run build
+
+# 本番ビルド前に以下のディレクトリを除外することを推奨
+# - learning_note/（学習メモ）
+# これにより、ビルドサイズを最適化できます
 ```
 
 [http://localhost:3000](http://localhost:3000)にアクセスして確認できます。
@@ -44,6 +48,8 @@ npm run build
 MICROCMS_API_KEY=your_api_key
 MICROCMS_SERVICE_DOMAIN=your_service_domain
 ```
+⚠️ 環境変数は`.env.local`ファイルに設定し、このファイルは必ず`.gitignore`に含めてください。
+APIキーは秘密情報として扱い、公開リポジトリにコミットしないようご注意ください。
 
 ## 学習メモ
 
