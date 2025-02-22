@@ -9,7 +9,10 @@
 - React Aria ComponentsのLinkはspanでrole="link"を生成する
 - v13.0.0からは子<a>タグは不要。
 
-## SEO
+# deploy
+- faviconはapp直下に置くだけでOK
 ### metadata
 - https://nextjs.org/docs/app/building-your-application/optimizing/metadata#static-metadata
--
+    - 静的メタデータ
+    - 動的メタデータ
+    - rootでデフォルトの設定などもできる
