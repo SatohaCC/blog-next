@@ -1,6 +1,5 @@
-import Button from "@/components/ui/Button/button";
-import Link from "next/link";
-
+import Link from "@/components/ui/Link/link";
+import Text from "@/components/ui/Text/text";
 type Props = {
     page: number;
     category?: string;
@@ -11,7 +10,7 @@ export const PaginationButton = ({ page, currentPage, category }: Props) => {
     const buttonStyle = page === currentPage ? "currentPage" : "otherPages";
     return (
         <Link href={`/${category}/page/${page}`}>
-            <Button visual={buttonStyle}>{page}</Button>
+            <Text visual={buttonStyle}>{page}</Text>
         </Link>
     );
 };
