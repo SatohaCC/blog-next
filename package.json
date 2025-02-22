@@ -13,7 +13,8 @@
         "test:watch": "jest --watch",
         "test:coverage": "jest --coverage",
         "storybook": "storybook dev -p 6006",
-        "build-storybook": "storybook build"
+        "build-storybook": "storybook build",
+        "typecheck": "tsc --noEmit"
     },
     "dependencies": {
         "dayjs": "^1.11.13",
@@ -63,6 +64,7 @@
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [
+            "tsc --noEmit",
             "eslint --fix",
             "prettier --write"
         ],
