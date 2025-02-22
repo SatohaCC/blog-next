@@ -1,8 +1,9 @@
 import { Metadata } from "next/types";
 
+import ArticleList from "@/components/features/ArticleList/ArticleList";
+import Pagination from "@/components/features/Pagination/pagination";
 import { getList, getPaths } from "@/lib/microcms";
 import { PER_PAGE } from "../../../../../lib/siteInfo";
-import ArticlePagePresentation from "./ArticlePagePresentation";
 
 export async function generateStaticParams() {
     const { totalCount } = await getList();
@@ -34,5 +35,10 @@ export default async function PageIndex(props: Props) {
         limit: PER_PAGE,
     });
 
-    return <ArticlePagePresentation contents={contents} totalCount={totalCount} currentPage={id} />;
+    return (
+        <>
+            <ArticleList contents={contents} />
+            <Pagination totalCount={totalCount} currentPage={id} />
+        </>
+    );
 }
