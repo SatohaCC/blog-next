@@ -20,9 +20,6 @@ export const cardRecipe = sva({
             fontWeight: "bold",
             color: "gray.800",
             lineHeight: "tight",
-            _hover: {
-                color: "blue.600",
-            },
         },
         description: {
             color: "gray.600",
