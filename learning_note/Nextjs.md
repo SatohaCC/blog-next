@@ -25,5 +25,5 @@
 
 ### robots.txt
 - https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots
-- app/robots.txtに設定
+- app/robots.tsに設定
 -
