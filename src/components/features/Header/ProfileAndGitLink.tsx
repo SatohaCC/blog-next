@@ -22,7 +22,7 @@ const ProfileAndGitLink = () => {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <Image src="/github-mark.svg" alt="icon" width={20} height={20} />
+                <Image src="/github-mark.svg" alt="icon" width={24} height={24} />
             </Link>
         </div>
     );
