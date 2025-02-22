@@ -6,7 +6,7 @@ type Props = {
     currentPage: number;
 };
 
-export const PaginationButton = ({ page, currentPage, category }: Props) => {
+const PaginationLink = ({ page, currentPage, category }: Props) => {
     const buttonStyle = page === currentPage ? "currentPage" : "otherPages";
     return (
         <Link href={`/${category}/page/${page}`}>
@@ -14,3 +14,5 @@ export const PaginationButton = ({ page, currentPage, category }: Props) => {
         </Link>
     );
 };
+
+export default PaginationLink;
