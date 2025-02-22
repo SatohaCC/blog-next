@@ -1,7 +1,7 @@
 import { client, getBlogPost } from "@/lib/microcms";
 import dayjs from "dayjs";
 import { processer } from "microcms-richedit-processer";
-import BlogPostPresentation from "./BlogPostPresentation";
+import BlogPostPresentation from "../../../../components/features/Article/article";
 
 // 記事詳細ページの生成
 export default async function BlogPostPage({ params }: { params: Promise<{ id: string }> }) {
