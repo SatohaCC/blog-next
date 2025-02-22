@@ -1,8 +1,7 @@
 import { getMenu } from "@/lib/microcms";
-import { MENU_REVALIDATE } from "@/lib/siteInfo";
 import HeaderPresentation from "./HeaderPresentation";
 
-export const revalidate = MENU_REVALIDATE;
+export const revalidate = 3600;
 
 const Header = async () => {
     const { contents } = await getMenu();
