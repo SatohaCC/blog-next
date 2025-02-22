@@ -32,10 +32,6 @@ npm run lint
 
 # ビルド（本番用）
 npm run build
-
-# 本番ビルド前に以下のディレクトリを除外することを推奨
-# - learning_note/（学習メモ）
-# これにより、ビルドサイズを最適化できます
 ```
 
 [http://localhost:3000](http://localhost:3000)にアクセスして確認できます。
