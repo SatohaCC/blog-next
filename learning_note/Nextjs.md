@@ -22,3 +22,8 @@
     - 個別ページのパスを生成するのと同じように設定
     - デプロイすれば勝手に生成される。
     - サイトURL/sitemap.xmlで確認できる
+
+### robots.txt
+- https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots
+- app/robots.txtに設定
+-
