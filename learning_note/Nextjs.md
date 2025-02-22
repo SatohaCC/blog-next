@@ -16,3 +16,9 @@
     - 静的メタデータ
     - 動的メタデータ
     - rootでデフォルトの設定などもできる
+### sitemap
+- https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap#generating-a-sitemap-using-code-js-ts
+- siteの大きさによるけどapp/sitemap.tsをおくのが楽そう
+    - 個別ページのパスを生成するのと同じように設定
+    - デプロイすれば勝手に生成される。
+    - サイトURL/sitemap.xmlで確認できる
