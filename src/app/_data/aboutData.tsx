@@ -21,12 +21,12 @@ export const iconsData: iconType[] = [
         id: 1,
         title: "twitter",
         url: "https://twitter.com/SatohaCC",
-        icon: <FaTwitter />,
+        icon: FaTwitter,
     },
     {
         id: 2,
         title: "github",
         url: "https://github.com/SatohaCC",
-        icon: <FaGithub />,
+        icon: FaGithub,
     },
 ];
