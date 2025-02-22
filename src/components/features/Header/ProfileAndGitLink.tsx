@@ -1,8 +1,9 @@
+import Link from "@/components/ui/Link/link";
 import Image from "next/image";
-import Link from "next/link";
+
 import { css } from "styled-system/css";
 
-const Profile = () => {
+const ProfileAndGitLink = () => {
     return (
         <div
             className={css({
@@ -23,4 +24,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default ProfileAndGitLink;

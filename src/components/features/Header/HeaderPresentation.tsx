@@ -2,7 +2,7 @@ import Logo from "@/components/features/Header/Logo";
 import Navigation from "@/components/features/Header/Navigation";
 import { HeaderProps } from "@/lib/types";
 import { css } from "styled-system/css";
-import Profile from "./Profile";
+import ProfileAndGitLink from "./ProfileAndGitLink";
 
 const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
     <header>
@@ -24,7 +24,7 @@ const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
         >
             <Logo />
             <Navigation contents={contents} />
-            <Profile />
+            <ProfileAndGitLink />
         </div>
     </header>
 );
