@@ -1,5 +1,5 @@
 import { MicroCMSContentId, MicroCMSDate } from "microcms-js-sdk";
-
+import { IconType } from "react-icons";
 // MicroCMSの型定義
 export type ArticleType = {
     id: string;
@@ -46,7 +46,7 @@ export type iconType = {
     id: number;
     title: "twitter" | "github";
     url: string;
-    icon: unknown; // TODO: 型をつける
+    icon: IconType;
 };
 
 export type portfolioType = {

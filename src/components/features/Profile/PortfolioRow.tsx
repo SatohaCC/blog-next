@@ -24,11 +24,7 @@ const PortfolioRow = ({ data }: Props) => {
             </Link>
 
             {data.text.map((text, index) => {
-                return (
-                    <p key={index} className={css({ pl: "3" })}>
-                        {text}
-                    </p>
-                );
+                return <p key={index}>{text}</p>;
             })}
         </div>
     );

@@ -4,8 +4,9 @@ import BlockTitle from "./BlockTitle";
 import PortfolioRow from "./PortfolioRow";
 
 const containerStyle = css({
-    display: "grid",
-    gap: "8",
+    display: "flex",
+    flexDirection: "column",
+    gap: "3",
 });
 
 const Portfolios = () => {

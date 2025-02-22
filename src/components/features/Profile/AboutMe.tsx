@@ -21,7 +21,7 @@ const iconStyle = cva({
 const AboutMe = () => {
     return (
         <div>
-            <Flex pb={3} alignItems="baseline">
+            <Flex alignItems="baseline">
                 <BlockTitle title={"Satoha"} />
                 {iconsData.map((icon) => {
                     return (
