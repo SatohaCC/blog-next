@@ -6,18 +6,18 @@ export const qualificationsData = [
         text: "２級ファイナンシャル・プランニング技能士",
     },
     {
-        text: "ＡＥＡＪ認定アロマテラピーインストラクター",
+        text: "AEAJ認定アロマテラピーインストラクター",
     },
     {
-        text: "日商簿記検定試験３級",
+        text: "AEAJ認定アロマブレンドデザイナー",
     },
     {
-        text: "ＡＥＡＪ認定アロマブレンドデザイナー",
+        text: "AWS Certified Cloud Practitioner",
+    },
+    {
+        text: "ITパスポート試験",
     },
     {
         text: "情報セキュリティマネジメント試験",
-    },
-    {
-        text: "化粧品成分検定１級",
     },
 ];

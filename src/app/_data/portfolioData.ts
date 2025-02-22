@@ -6,7 +6,7 @@ export const portfolioData: portfolioType[] = [
         url: "https://www.satoha.net/about",
         linkType: "_self",
         text: [
-            "Next.js, panda css, TypeScript, microCMS",
+            "Next.js, TypeScript, panda css,React Aria, microCMS",
             "WordPress以外でブログ作ってみたかった。",
         ],
     },
