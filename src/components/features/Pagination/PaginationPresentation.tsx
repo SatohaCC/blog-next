@@ -1,6 +1,6 @@
 import { Center, HStack } from "styled-system/jsx";
 
-import { PaginationButton } from "./pagiButton";
+import PaginationLink from "./PaginationLink";
 
 type Props = {
     topPage: number;
@@ -14,10 +14,10 @@ const PaginationPresentation = ({ topPage, lastPage, pageList, currentPage, cate
     return (
         <Center p={5}>
             <HStack>
-                <PaginationButton page={topPage} currentPage={currentPage} category={category} />
+                <PaginationLink page={topPage} currentPage={currentPage} category={category} />
                 {lastPage > 1 && currentPage > 3 && <div>・・・</div>}
                 {pageList.map((page, index) => (
-                    <PaginationButton
+                    <PaginationLink
                         key={index}
                         page={page}
                         currentPage={currentPage}
@@ -26,11 +26,7 @@ const PaginationPresentation = ({ topPage, lastPage, pageList, currentPage, cate
                 ))}
                 {lastPage > 1 && currentPage < lastPage - 2 && <div>・・・</div>}
                 {lastPage > 1 && (
-                    <PaginationButton
-                        page={lastPage}
-                        currentPage={currentPage}
-                        category={category}
-                    />
+                    <PaginationLink page={lastPage} currentPage={currentPage} category={category} />
                 )}
             </HStack>
         </Center>
