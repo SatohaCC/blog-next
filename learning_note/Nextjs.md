@@ -5,5 +5,6 @@
 
 ## Link
 - https://nextjs.org/docs/app/api-reference/components/link#if-the-child-is-a-custom-component-that-wraps-an-a-tag
-- React Aria ComponentsのLinkと合わせるときpassHrefを使う
-- 使わないとSEOに影響でる可能性がある
+- React Aria ComponentsのLinkと合わせるときrole="link"が重複するので避ける
+- React Aria ComponentsのLinkはspanでrole="link"を生成する
+- v13.0.0からは子<a>タグは不要。
