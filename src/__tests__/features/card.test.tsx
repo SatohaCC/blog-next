@@ -1,6 +1,6 @@
 import { ArticleType } from "@/lib/types";
 import { render, screen } from "@testing-library/react";
-import Card from "./card";
+import Card from "../../components/ui/Card/card";
 
 describe("Card", () => {
     const mockContent: ArticleType = {
