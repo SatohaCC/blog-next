@@ -6,6 +6,8 @@ import { Metadata } from "next/types";
 import { siteName } from "@/lib/siteInfo";
 import BlogPostPresentation from "../../../../components/features/Article/article";
 
+export const revalidate = 86400;
+
 // 静的パスを生成
 export async function generateStaticParams() {
     const contentIds = await client.getAllContentIds({ endpoint: "articles" });

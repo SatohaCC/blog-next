@@ -5,6 +5,8 @@ import Pagination from "@/components/features/Pagination/pagination";
 import { getList, getPaths } from "@/lib/microcms";
 import { PER_PAGE, siteName } from "../../../../../lib/siteInfo";
 
+export const revalidate = 86400;
+
 export async function generateStaticParams() {
     const { totalCount } = await getList();
     return getPaths({ totalCount });
