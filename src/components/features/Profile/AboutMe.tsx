@@ -1,6 +1,6 @@
 import { aboutData, iconsData } from "@/app/_data/aboutData";
 import Link from "@/components/ui/Link/link";
-
+import { myName } from "@/lib/siteInfo";
 import { cva } from "styled-system/css";
 import { Flex } from "styled-system/jsx";
 import BlockTitle from "./BlockTitle";
@@ -22,7 +22,7 @@ const AboutMe = () => {
     return (
         <div>
             <Flex alignItems="baseline">
-                <BlockTitle title={"Satoha"} />
+                <BlockTitle title={myName} />
                 {iconsData.map((icon) => {
                     return (
                         <Link key={icon.id} href={icon.url} target="_blank">
