@@ -4,7 +4,7 @@ import { getList, getMenu, getPaths } from "@/lib/microcms";
 import { PER_PAGE, siteName } from "@/lib/siteInfo";
 import { Metadata } from "next/types";
 
-export const revalidate = 86400;
+export const revalidate = 3600;
 
 export async function generateStaticParams() {
     const { contents, totalCount } = await getMenu();
