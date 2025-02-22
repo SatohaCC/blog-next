@@ -1,7 +1,9 @@
 import { ArticleType } from "@/lib/types";
 import dayjs from "dayjs";
 import "highlight.js/styles/a11y-dark.css";
-import Link from "next/link";
+
+import Link from "next/dist/client/link";
+import { Flex } from "styled-system/jsx";
 import { cardRecipe } from "./card.recipe";
 
 type CardProps = {
@@ -14,14 +16,16 @@ const Card = ({ content }: CardProps) => {
     const { id, title, summary, categories = [] } = content;
     return (
         <div className={classes.root}>
-            <div className={classes.date}>{publishedAt}</div>
+            <Flex alignItems="baseline" gap="3">
+                <div className={classes.date}>{publishedAt}</div>
+                <div className={classes.tags}>
+                    {categories.map((category) => category.label).join(", ")}
+                </div>
+            </Flex>
             <Link href={`/article/${id}`}>
                 <div className={classes.title}>{title}</div>
             </Link>
             <div className={classes.description}>{summary}</div>
-            <div className={classes.tags}>
-                {categories.map((category) => category.label).join(", ")}
-            </div>
         </div>
     );
 };
