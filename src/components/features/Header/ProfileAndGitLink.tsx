@@ -17,8 +17,12 @@ const ProfileAndGitLink = () => {
             <Link href="/profile">
                 <div className={css({ pr: "2" })}>Profile</div>
             </Link>
-            <Link href="https://github.com/SatohaCC/blog-next" target="_blank">
-                <Image src="/github-mark.svg" alt="icon" width={20} height={20} />{" "}
+            <Link
+                href="https://github.com/SatohaCC/blog-next"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <Image src="/github-mark.svg" alt="icon" width={20} height={20} />
             </Link>
         </div>
     );
