@@ -31,23 +31,28 @@ export const textRecipe = defineRecipe({
     variants: {
         visual: {
             currentPage: {
-                bg: "teal.600",
-                color: "white",
+                bg: "teal.700",
+                color: "gray.50",
                 p: "2",
                 justifyItems: "center",
+                boxShadow: "sm",
             },
             otherPages: {
-                color: "gray.500",
+                color: "gray.600",
                 borderWidth: "1px",
-                borderColor: "gray.500",
+                borderColor: "gray.400",
                 _hover: {
-                    color: "gray.700",
-                    borderColor: "gray.700",
+                    background: "gray.100",
+                    boxShadow: "sm",
                 },
-                _focus: {
-                    outlineOffset: "1px",
+                _focusVisible: {
                     outline: "2px solid",
-                    outlineColor: "gray.700",
+                    outlineColor: "teal.400",
+                    outlineOffset: "2px",
+                },
+                _active: {
+                    bg: "teal.500",
+                    color: "gray.50",
                 },
             },
         },

@@ -23,7 +23,7 @@ const Link = ({ children, href, target = "_self", rel = "", icon: Icon }: Props)
                 _hover: {
                     color: "blue.600",
                 },
-                _focus: {
+                _focusVisible: {
                     color: "blue.600",
                     outline: "2px solid",
                     outlineColor: "blue.600",
