@@ -44,7 +44,7 @@ export type ParentCategoriesEntity = {
 
 export type iconType = {
     id: number;
-    title: "twitter" | "github";
+    title: "twitter-icon" | "github-icon";
     url: string;
     icon: IconType;
 };

@@ -11,8 +11,8 @@ const iconStyle = cva({
     },
     variants: {
         icon: {
-            twitter: { color: "#1DA1F2" },
-            github: { color: "#000000" },
+            "twitter-icon": { color: "#1DA1F2" },
+            "github-icon": { color: "#000000" },
         },
     },
 });
@@ -24,7 +24,7 @@ const AboutMe = () => {
                 <BlockTitle title={myName} />
                 {iconsData.map((icon) => {
                     return (
-                        <Link key={icon.id} href={icon.url} target="_blank">
+                        <Link key={icon.id} aria-label={icon.title} href={icon.url} target="_blank">
                             <div className={iconStyle({ icon: icon.title })}>
                                 {icon.icon && <icon.icon />}
                             </div>
