@@ -1,4 +1,4 @@
-import { portfolioData } from "@/app/_data/portfolioData";
+import { portfolioData } from "@/data/portfolioData";
 import { css } from "styled-system/css";
 import BlockTitle from "./BlockTitle";
 import PortfolioRow from "./PortfolioRow";

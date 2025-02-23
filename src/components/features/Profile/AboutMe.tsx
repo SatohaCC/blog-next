@@ -1,5 +1,5 @@
-import { aboutData, iconsData } from "@/app/_data/aboutData";
 import Link from "@/components/ui/Link/link";
+import { aboutData, iconsData } from "@/data/aboutData";
 import { myName } from "@/lib/siteInfo";
 import { cva } from "styled-system/css";
 import { Flex } from "styled-system/jsx";
