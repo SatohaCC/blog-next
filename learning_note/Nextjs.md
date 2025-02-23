@@ -26,4 +26,9 @@
 ### robots.txt
 - https://nextjs.org/docs/app/api-reference/file-conventions/metadata/robots
 - app/robots.tsに設定
+
+
+### Next.js Compiler
+- https://nextjs.org/docs/architecture/nextjs-compiler
+- app/robots.tsに設定
 -
