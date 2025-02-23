@@ -39,7 +39,7 @@ describe("HeaderPresentation", () => {
 
     it("GitHubアイコンが表示される", () => {
         render(<HeaderPresentation contents={mockContents} />);
-        expect(screen.getByAltText("icon")).toBeInTheDocument();
+        expect(screen.getByAltText("github-icon")).toBeInTheDocument();
     });
     //todo:リンク追加したらMenuとわかるようにして修正する
     // it("メニューの数が正しい", () => {
