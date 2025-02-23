@@ -8,17 +8,17 @@ export const articleRecipe = css({
         pb: "3",
     },
     "& h2": {
-        fontSize: { base: "sm", md: "md" },
+        fontSize: { base: "md", md: "md" },
         fontWeight: "600",
         pt: "5",
     },
     "& h3": {
-        fontSize: { base: "xs", md: "sm" },
+        fontSize: { base: "sm", md: "md" },
         fontWeight: "600",
         pt: "2",
     },
     "& p": {
-        fontSize: { base: "xs", md: "sm" },
+        fontSize: { base: "sm", md: "md" },
         lineHeight: "1.5",
         letterSpacing: "0.02em",
     },
