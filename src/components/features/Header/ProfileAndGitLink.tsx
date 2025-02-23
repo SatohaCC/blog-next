@@ -12,11 +12,10 @@ const ProfileAndGitLink = () => {
                 display: "flex",
                 justifyContent: "flex-end",
                 alignItems: "center",
+                gap: "2",
             })}
         >
-            <Link href="/profile">
-                <div className={css({ pr: "2" })}>Profile</div>
-            </Link>
+            <Link href="/profile">Profile</Link>
             <Link
                 href="https://github.com/SatohaCC/blog-next"
                 target="_blank"

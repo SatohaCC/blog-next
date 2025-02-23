@@ -8,7 +8,6 @@ import BlockTitle from "./BlockTitle";
 const iconStyle = cva({
     base: {
         fontSize: { base: "md", md: "lg", lg: "lg" },
-        pl: "3",
     },
     variants: {
         icon: {
@@ -21,7 +20,7 @@ const iconStyle = cva({
 const AboutMe = () => {
     return (
         <div>
-            <Flex alignItems="baseline">
+            <Flex alignItems="baseline" gap="2">
                 <BlockTitle title={myName} />
                 {iconsData.map((icon) => {
                     return (
