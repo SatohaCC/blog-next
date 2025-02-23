@@ -13,17 +13,8 @@ export const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
             backgroundColor: "white",
             borderBottom: "1px solid",
             borderColor: "gray.100",
-            transition: "background-color 0.2s, border-color 0.2s",
-            _dark: {
-                backgroundColor: "rgba(0, 0, 0, 0.8)",
-                borderColor: "gray.800",
-            },
-            maxW: "1280px",
-            margin: "0 auto",
-            px: { base: "2", md: "5" },
-            py: "1",
-            display: "flex",
-            alignItems: "center",
+            shadow: "sm",
+            width: "100%",
         })}
     >
         <nav
@@ -31,6 +22,10 @@ export const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
                 display: "flex",
                 alignItems: "center",
                 width: "100%",
+                maxW: "1280px",
+                margin: "0 auto",
+                px: { base: "2", md: "5" },
+                py: "1",
             })}
         >
             <Logo />
