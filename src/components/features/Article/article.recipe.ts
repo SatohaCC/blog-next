@@ -1,6 +1,7 @@
 import { css } from "styled-system/css";
 
 export const articleRecipe = css({
+    px: "3",
     "& h1": {
         fontSize: { base: "sm", md: "lg" },
         fontWeight: "700",
