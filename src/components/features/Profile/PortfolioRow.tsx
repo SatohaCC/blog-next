@@ -17,7 +17,7 @@ const PortfolioRow = ({ data }: Props) => {
     return (
         <div>
             <Link href={data.url} target={data.linkType} rel="noopener noreferrer">
-                <Flex alignItems="baseline">
+                <Flex alignItems="baseline" display="inline-flex">
                     <h3 className={titleStyle}>{data.title}</h3>
                     {data.linkType === "_blank" && <RiExternalLinkLine />}
                 </Flex>
