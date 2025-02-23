@@ -11,6 +11,7 @@
 
 # deploy
 - faviconはapp直下に置くだけでOK
+
 ### metadata
 - https://nextjs.org/docs/app/building-your-application/optimizing/metadata#static-metadata
     - 静的メタデータ
@@ -31,4 +32,9 @@
 ### Next.js Compiler
 - https://nextjs.org/docs/architecture/nextjs-compiler
 - app/robots.tsに設定
+-
+
+### Font Optimization
+- https://nextjs.org/docs/app/building-your-application/optimizing/fonts
+- 複数適応の場合なども記述あり
 -
