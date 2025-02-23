@@ -1,4 +1,4 @@
-import Header from "@/components/features/Header/header";
+import Header from "@/app/header";
 import { myName, siteDescription, siteName } from "@/lib/siteInfo";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -48,10 +48,8 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${geistSans.variable} ${geistMono.variable}`}>
-                <div>
-                    <Header />
-                    <Main>{children}</Main>
-                </div>
+                <Header />
+                <Main>{children}</Main>
             </body>
         </html>
     );
