@@ -20,7 +20,7 @@ export const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
             },
             maxW: "1280px",
             margin: "0 auto",
-            px: "10",
+            px: { base: "2", md: "5" },
             py: "1",
             display: "flex",
             alignItems: "center",

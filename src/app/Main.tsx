@@ -10,7 +10,7 @@ const Main = ({ children }: Props) => {
         <Box
             className={css({
                 maxW: "1280px",
-                px: "10",
+                px: { base: "0", md: "2" },
                 py: "5",
                 margin: "0 auto",
             })}
