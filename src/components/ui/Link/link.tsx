@@ -9,14 +9,16 @@ type Props = {
     target?: string;
     rel?: string;
     icon?: IconType;
+    ariaLabel?: string;
 };
 
-const Link = ({ children, href, target = "_self", rel = "", icon: Icon }: Props) => {
+const Link = ({ children, href, target = "_self", rel = "", ariaLabel, icon: Icon }: Props) => {
     return (
         <NEXTLink
             href={href}
             target={target}
             rel={rel}
+            aria-label={ariaLabel}
             className={css({
                 textDecoration: "none",
                 outline: "none",

@@ -18,7 +18,11 @@ const Navigation = ({ contents }: Props) => (
         })}
     >
         {contents?.map((content) => (
-            <Link key={content.id} href={`/${content.href}/page/1`}>
+            <Link
+                key={content.id}
+                href={`/${content.href}/page/1`}
+                ariaLabel={`${content.label}へのリンク`}
+            >
                 {content.label}
             </Link>
         ))}

@@ -15,11 +15,14 @@ const ProfileAndGitLink = () => {
                 gap: "2",
             })}
         >
-            <Link href="/profile">Profile</Link>
+            <Link href="/profile" ariaLabel="プロフィールへのリンク">
+                Profile
+            </Link>
             <Link
                 href="https://github.com/SatohaCC/blog-next"
                 target="_blank"
                 rel="noopener noreferrer"
+                ariaLabel="このサイトのGitHubリポジトリへのリンク"
             >
                 <Image src="/github-mark.svg" alt="github-icon" width={24} height={24} />
             </Link>

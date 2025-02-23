@@ -26,9 +26,17 @@ export const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
             alignItems: "center",
         })}
     >
-        <Logo />
-        <Navigation contents={contents} />
-        <ProfileAndGitLink />
+        <nav
+            className={css({
+                display: "flex",
+                alignItems: "center",
+                width: "100%",
+            })}
+        >
+            <Logo />
+            <Navigation contents={contents} />
+            <ProfileAndGitLink />
+        </nav>
     </header>
 );
 
