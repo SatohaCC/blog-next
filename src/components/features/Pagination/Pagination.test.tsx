@@ -40,7 +40,7 @@ describe("Pagination", () => {
 
     it("カテゴリーが正しく渡される", () => {
         render(<Pagination totalCount={PER_PAGE * 3} currentPage={1} category="test" />);
-        const link = screen.getByRole("link", { name: "1" });
+        const link = screen.getByRole("link", { name: "testの1ページ目へのリンク" });
         expect(link).toHaveAttribute("href", "/test/page/1");
     });
 });

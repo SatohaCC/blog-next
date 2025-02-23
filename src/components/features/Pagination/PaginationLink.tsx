@@ -9,7 +9,10 @@ type Props = {
 const PaginationLink = ({ page, currentPage, category }: Props) => {
     const buttonStyle = page === currentPage ? "currentPage" : "otherPages";
     return (
-        <Link href={`/${category}/page/${page}`}>
+        <Link
+            href={`/${category}/page/${page}`}
+            ariaLabel={`${category}の${page}ページ目へのリンク`}
+        >
             <Text visual={buttonStyle}>{page}</Text>
         </Link>
     );
