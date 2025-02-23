@@ -14,19 +14,12 @@ type Props = {
     body: string;
 };
 
-export default function BlogPostPresentation({
-    title,
-    publishedAt,
-    updatedAt,
-    summary,
-    body,
-}: Props) {
+export default function Article({ title, publishedAt, updatedAt, body }: Props) {
     return (
         <div className={articleRecipe}>
             <h1>{title}</h1>
             <p>作成:{publishedAt}</p>
             <p>更新:{updatedAt}</p>
-            <p className={css({ py: "1" })}>{summary}</p>
             <div className={css({ pt: "5" })}>{parse(body)}</div>
             <Box pt={10}>
                 <BackBtn />

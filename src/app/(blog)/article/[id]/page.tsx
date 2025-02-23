@@ -1,10 +1,9 @@
+import Article from "@/components/features/Article/article";
 import { client, getBlogPost } from "@/lib/microcms";
+import { siteName } from "@/lib/siteInfo";
 import dayjs from "dayjs";
 import { processer } from "microcms-richedit-processer";
 import { Metadata } from "next/types";
-
-import { siteName } from "@/lib/siteInfo";
-import BlogPostPresentation from "../../../../components/features/Article/article";
 
 export const revalidate = 3600;
 
@@ -42,7 +41,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
     });
 
     return (
-        <BlogPostPresentation
+        <Article
             title={content.title}
             publishedAt={publishedAt}
             updatedAt={updatedAt}

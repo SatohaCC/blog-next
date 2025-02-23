@@ -1,9 +1,8 @@
-import { Metadata } from "next/types";
-
 import ArticleList from "@/components/features/ArticleList/ArticleList";
 import Pagination from "@/components/features/Pagination/pagination";
 import { getList, getPaths } from "@/lib/microcms";
-import { PER_PAGE, siteName } from "../../../../../lib/siteInfo";
+import { PER_PAGE, siteName } from "@/lib/siteInfo";
+import { Metadata } from "next/types";
 
 export const revalidate = 3600;
 

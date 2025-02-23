@@ -10,12 +10,12 @@ export const articleRecipe = css({
     "& h2": {
         fontSize: { base: "sm", md: "md" },
         fontWeight: "600",
+        pt: "5",
     },
     "& h3": {
         fontSize: { base: "xs", md: "sm" },
         fontWeight: "600",
-        mt: "6",
-        mb: "3",
+        pt: "2",
     },
     "& p": {
         fontSize: { base: "xs", md: "sm" },
@@ -25,10 +25,22 @@ export const articleRecipe = css({
     "& ol": {
         listStyleType: "decimal",
         listStylePosition: "inside",
+        pl: "4",
+    },
+    "& ul": {
+        listStyleType: "disc",
+        listStylePosition: "inside",
+        pl: "4",
+    },
+    "& li": {
+        fontSize: { base: "xs", md: "sm" },
+        lineHeight: "1.5",
     },
     "& blockquote": {
         borderLeftWidth: "4px",
-        borderLeftColor: "#f86c3d",
+        borderLeftColor: "gray.200",
+        px: "2",
+        mx: "2",
     },
     "& code": {
         fontSize: { base: "xs", md: "sm" },
