@@ -19,13 +19,13 @@ export const aboutData = [
 export const iconsData: iconType[] = [
     {
         id: 1,
-        title: "twitter",
+        title: "twitter-icon",
         url: "https://twitter.com/SatohaCC",
         icon: FaTwitter,
     },
     {
         id: 2,
-        title: "github",
+        title: "github-icon",
         url: "https://github.com/SatohaCC",
         icon: FaGithub,
     },
