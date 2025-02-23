@@ -21,6 +21,13 @@ export const buttonRecipe = defineRecipe({
         userSelect: "none",
         verticalAlign: "middle",
         whiteSpace: "nowrap",
+        _focusVisible: {
+            color: "blue.600",
+            outline: "2px solid",
+            outlineColor: "blue.600",
+            outlineOffset: "2px",
+            borderRadius: "sm",
+        },
     },
 
     defaultVariants: {
@@ -38,7 +45,7 @@ export const buttonRecipe = defineRecipe({
                 _hover: {
                     background: "buttonHover",
                 },
-                _focus: {
+                _focusVisible: {
                     background: "buttonActive",
                 },
                 _active: {
