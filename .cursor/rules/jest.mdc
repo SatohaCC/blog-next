@@ -1,0 +1,8 @@
+---
+description: Jest best practices
+globs: *.test.tsx, *.test.ts
+---
+## Testing
+- Write unit tests for components using Jest and React Testing Library.
+- Implement integration tests for critical user flows.
+- don't Use vitest.
