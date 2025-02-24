@@ -11,16 +11,15 @@ describe("BackBtn", () => {
     const mockBack = jest.fn();
 
     beforeEach(() => {
-        // 各テストの前にモックをリセット
         (useRouter as jest.Mock).mockImplementation(() => ({
             back: mockBack,
         }));
         jest.clearAllMocks();
     });
 
-    it("デフォルトテキスト'戻る'でボタンがレンダリングされること", () => {
+    it("正しいaria-labelが設定されていること", () => {
         render(<BackBtn />);
-        expect(screen.getByRole("button", { name: "戻る" })).toBeInTheDocument();
+        expect(screen.getByRole("button")).toHaveAttribute("aria-label", "前のページに戻る");
     });
 
     it("クリック時にrouter.backが呼ばれること", () => {
