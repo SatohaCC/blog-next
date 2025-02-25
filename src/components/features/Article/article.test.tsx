@@ -35,11 +35,6 @@ describe("Article", () => {
         expect(screen.getByText(`更新:${mockArticleData.updatedAt}`)).toBeInTheDocument();
     });
 
-    it("summaryが存在する場合に表示されること", () => {
-        render(<Article {...mockArticleData} />);
-        expect(screen.getByText(mockArticleData.summary)).toBeInTheDocument();
-    });
-
     it("記事の本文が正しく表示されること", () => {
         render(<Article {...mockArticleData} />);
         // html-react-parserをモックしているので、本文がそのまま表示される
@@ -55,5 +50,10 @@ describe("Article", () => {
         // 戻るボタンが1つだけ表示されていることを確認
         const backButtons = screen.getAllByRole("button");
         expect(backButtons).toHaveLength(1);
+    });
+
+    it("summaryプロパティが渡されても表示されないこと", () => {
+        render(<Article {...mockArticleData} />);
+        expect(screen.queryByText(mockArticleData.summary)).not.toBeInTheDocument();
     });
 });
