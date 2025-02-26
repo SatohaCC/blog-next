@@ -6,7 +6,7 @@
 node_modules/*
 
 # husky
-.husky/*
+.husky/_/*
 
 # learning_note
 learning_note/*
