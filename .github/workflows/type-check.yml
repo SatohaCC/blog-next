@@ -1,6 +1,10 @@
 name: Type Check
 
-on: [push, pull_request]
+on:
+    push:
+        branches: [main] # mainブランチへのpushのみ
+    pull_request:
+        branches: [main] # mainブランチへのPRのみ
 
 jobs:
     typecheck:
