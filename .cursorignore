@@ -8,8 +8,6 @@ node_modules/*
 # husky
 .husky/_/*
 
-# learning_note
-learning_note/*
 
 # .gitignore
 .gitignore
