@@ -78,7 +78,16 @@ describe("ArticleList", () => {
     it("contentsが空の場合、「No contents」が表示されること", () => {
         render(<ArticleList contents={[]} />);
 
+        // 「No contents」テキストが表示されることを確認
         expect(screen.getByText("No contents")).toBeInTheDocument();
+
+        // リスト要素（ul）が存在しないことを確認
+        const ulElements = screen.queryAllByRole("list");
+        expect(ulElements).toHaveLength(0);
+
+        // リストアイテム（li）が存在しないことを確認
+        const listItems = screen.queryAllByRole("listitem");
+        expect(listItems).toHaveLength(0);
     });
 
     it("記事のタイトルが正しく表示されること", () => {
@@ -91,5 +100,17 @@ describe("ArticleList", () => {
         render(<ArticleList contents={mockContents} />);
         const summaries = screen.getAllByText("テストの概要です");
         expect(summaries).toHaveLength(2);
+    });
+
+    it("mockContentsの要素数とulの中のリストアイテム数が一致すること", () => {
+        render(<ArticleList contents={mockContents} />);
+
+        // ulが1つだけ存在することを確認
+        const ulElements = screen.getAllByRole("list");
+        expect(ulElements).toHaveLength(1);
+
+        // ul内のli要素の数がmockContentsの長さと一致することを確認
+        const listItems = screen.getAllByRole("listitem");
+        expect(listItems).toHaveLength(mockContents.length);
     });
 });
