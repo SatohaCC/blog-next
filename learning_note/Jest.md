@@ -35,8 +35,9 @@
 - `toMatch()`: 文字列が正規表現にマッチするか
 - `toBeTruthy()` / `toBeFalsy()`: 真偽値のチェック
 
+## インストールと設定
 
-## install
+### インストール手順
 - https://nextjs.org/docs/app/building-your-application/testing/jest
 - npm install -D jest jest-environment-jsdom @testing-library/react @testing-library/dom @testing-library/jest-dom ts-node
 - npm init jest@latest
@@ -46,23 +47,26 @@
     - 絶対インポートとモジュール パス エイリアスの処理
 
 ### jest.config.tsの設定
-- testPathIgnorePatternsでJestがテストを実行する際に、特定のパスやファイルを無視するために使用。
+- **testPathIgnorePatterns**: Jestがテストを実行する際に、特定のパスやファイルを無視するために使用。
     - 無視されたファイルはテストされませんが、カバレッジレポートの対象にはなる可能性がある。
-- collectCoverageFromでカバレッジを収集するファイルを指定。カバレッジレポートに含める対象を細かく制御。
+
+- **collectCoverageFrom**: カバレッジを収集するファイルを指定。カバレッジレポートに含める対象を細かく制御。
     - !からは除外
     - Panda CSSのrecipeを除外
     - Storybookのstoriesを除外
-    ### TODO
-    - カバレッジテストなにでやるべきか調べる
-        - jest,Storybook,インタラクションテストなど
 
-- 併用可能: testPathIgnorePatternsでテストを無視し、collectCoverageFromで特定ファイルをカバレッジから除外することも可能。
+#### TODO
+- カバレッジテストなにでやるべきか調べる
+    - jest,Storybook,インタラクションテストなど
 
+- **併用可能**: testPathIgnorePatternsでテストを無視し、collectCoverageFromで特定ファイルをカバレッジから除外することも可能。
 
 ### jest.setup.ts
 - ここでインポートしておいてconfigで設定しておくと、テストファイル毎にインポートしないでいい
 
 ## モック
+
+### 基本概念
 - Web APIのデータ取得で失敗する場合のテストはモックでかく
     - Web APIで実装するのは美しくない
     - 外部向けの場合は実装もできない
@@ -84,3 +88,8 @@
 
 ### モック生成関数をつくる手法
 - ステータスコードを引数にして、if文で成功/失敗を切り分けてreturn
+
+## 関連ライブラリ
+
+### Testing Library
+Reactコンポーネントのテストに使用するライブラリ群。詳細は[Testing Library](./TestingLibrary.md)を参照。
