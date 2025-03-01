@@ -5,7 +5,7 @@ import { css } from "styled-system/css";
 
 const ProfileAndGitLink = () => {
     return (
-        <div
+        <ul
             className={css({
                 flex: 1,
                 textAlign: "right",
@@ -13,20 +13,27 @@ const ProfileAndGitLink = () => {
                 justifyContent: "flex-end",
                 alignItems: "center",
                 gap: "2",
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
             })}
         >
-            <Link href="/profile" ariaLabel="プロフィールへのリンク">
-                Profile
-            </Link>
-            <Link
-                href="https://github.com/SatohaCC/blog-next"
-                target="_blank"
-                rel="noopener noreferrer"
-                ariaLabel="このサイトのGitHubリポジトリへのリンク"
-            >
-                <Image src="/github-mark.svg" alt="github-icon" width={24} height={24} />
-            </Link>
-        </div>
+            <li>
+                <Link href="/profile" ariaLabel="プロフィールへのリンク">
+                    Profile
+                </Link>
+            </li>
+            <li>
+                <Link
+                    href="https://github.com/SatohaCC/blog-next"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ariaLabel="このサイトのGitHubリポジトリへのリンク"
+                >
+                    <Image src="/github-mark.svg" alt="github-icon" width={24} height={24} />
+                </Link>
+            </li>
+        </ul>
     );
 };
 

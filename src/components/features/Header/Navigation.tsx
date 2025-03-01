@@ -7,7 +7,7 @@ type Props = {
 };
 
 const Navigation = ({ contents }: Props) => (
-    <div
+    <ul
         className={css({
             flex: 1,
             display: { base: "none", md: "flex" },
@@ -15,18 +15,19 @@ const Navigation = ({ contents }: Props) => (
             fontSize: { base: "md", lg: "md" },
             gap: "20px",
             alignItems: "center",
+            listStyle: "none",
+            padding: 0,
+            margin: 0,
         })}
     >
         {contents?.map((content) => (
-            <Link
-                key={content.id}
-                href={`/${content.href}/page/1`}
-                ariaLabel={`${content.label}へのリンク`}
-            >
-                {content.label}
-            </Link>
+            <li key={content.id}>
+                <Link href={`/${content.href}/page/1`} ariaLabel={`${content.label}へのリンク`}>
+                    {content.label}
+                </Link>
+            </li>
         ))}
-    </div>
+    </ul>
 );
 
 export default Navigation;

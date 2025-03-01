@@ -4,11 +4,11 @@ import { css } from "styled-system/css";
 
 const Logo = () => {
     return (
-        <div className={css({ flex: 1, fontSize: { base: "lg", md: "2xl" }, fontWeight: "bold" })}>
+        <h1 className={css({ flex: 1, fontSize: { base: "lg", md: "2xl" }, fontWeight: "bold" })}>
             <Link href="/" ariaLabel="Homeへのリンク">
                 {siteName}
             </Link>
-        </div>
+        </h1>
     );
 };
 

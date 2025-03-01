@@ -18,6 +18,7 @@ export const HeaderPresentation = ({ contents }: { contents: HeaderProps }) => (
         })}
     >
         <nav
+            aria-label="メインナビゲーション"
             className={css({
                 display: "flex",
                 alignItems: "center",
