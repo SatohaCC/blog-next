@@ -19,7 +19,7 @@ const iconStyle = cva({
 
 const AboutMe = () => {
     return (
-        <div>
+        <section>
             <Flex alignItems="baseline" gap="2">
                 <BlockTitle title={myName} />
                 {iconsData.map((icon) => {
@@ -37,7 +37,7 @@ const AboutMe = () => {
                     return <p key={index}>{data.text}</p>;
                 })}
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -11,14 +11,14 @@ const containerStyle = css({
 
 const Portfolios = () => {
     return (
-        <div>
+        <section>
             <BlockTitle title="ポートフォリオ" />
             <div className={containerStyle}>
                 {portfolioData.map((data, index) => {
                     return <PortfolioRow key={index} data={data} />;
                 })}
             </div>
-        </div>
+        </section>
     );
 };
 

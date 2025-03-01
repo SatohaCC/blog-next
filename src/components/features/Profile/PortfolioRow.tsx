@@ -15,7 +15,7 @@ type Props = {
 
 const PortfolioRow = ({ data }: Props) => {
     return (
-        <div>
+        <section>
             <Link href={data.url} target={data.linkType} rel="noopener noreferrer">
                 <Flex alignItems="baseline" display="inline-flex">
                     <h3 className={titleStyle}>{data.title}</h3>
@@ -26,7 +26,7 @@ const PortfolioRow = ({ data }: Props) => {
             {data.text.map((text, index) => {
                 return <p key={index}>{text}</p>;
             })}
-        </div>
+        </section>
     );
 };
 
