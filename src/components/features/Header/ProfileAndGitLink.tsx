@@ -30,7 +30,21 @@ const ProfileAndGitLink = () => {
                     rel="noopener noreferrer"
                     ariaLabel="このサイトのGitHubリポジトリへのリンク"
                 >
-                    <Image src="/github-mark.svg" alt="github-icon" width={24} height={24} />
+                    <Image
+                        src="/github-mark.svg"
+                        alt="github-icon"
+                        width={24}
+                        height={24}
+                        className={css({
+                            display: "inline-block",
+                            _focusVisible: {
+                                outline: "2px solid",
+                                outlineColor: "blue.500",
+                                outlineOffset: "2px",
+                                borderRadius: "sm",
+                            },
+                        })}
+                    />
                 </Link>
             </li>
         </ul>
