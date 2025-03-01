@@ -6,10 +6,6 @@ import Button from "@/components/ui/Button/button";
 import { css } from "../../styled-system/css";
 import { Box } from "../../styled-system/jsx";
 
-const style = css({
-    color: "textColor",
-});
-
 export default function Error({
     error,
     reset,
@@ -24,7 +20,13 @@ export default function Error({
 
     return (
         <Box textAlign="center" py={10} px={6}>
-            <h1 className={style}>Something went wrong!</h1>
+            <h1
+                className={css({
+                    color: "textColor",
+                })}
+            >
+                Something went wrong!
+            </h1>
 
             <div className={css({ padding: "4" })} />
 
