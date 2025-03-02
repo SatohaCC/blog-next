@@ -1,4 +1,4 @@
-import Article from "@/components/features/Article/article";
+import Article from "@/components/ui/Article/article";
 import { client, getBlogPost } from "@/lib/microcms";
 import { siteName } from "@/lib/siteInfo";
 import dayjs from "dayjs";
