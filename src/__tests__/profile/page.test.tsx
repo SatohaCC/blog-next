@@ -1,6 +1,6 @@
+import ProfilePage from "@/app/(blog)/profile/page";
 import { myName } from "@/lib/siteInfo";
 import { render, screen } from "@testing-library/react";
-import ProfilePage from "../page";
 
 describe("ProfilePage", () => {
     it("renders profile page correctly", () => {

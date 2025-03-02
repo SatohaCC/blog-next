@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: `${myName} のプロフィールページです。`,
 };
 
-const page = () => {
+const ProfilePage = () => {
     return (
         <Stack px={5}>
             <AboutMe />
@@ -23,4 +23,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default ProfilePage;
