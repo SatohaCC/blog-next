@@ -3,8 +3,8 @@
 import { useEffect } from "react";
 
 import Button from "@/components/ui/Button/button";
-import { css } from "../../styled-system/css";
-import { Box } from "../../styled-system/jsx";
+import { css } from "styled-system/css";
+import { flex } from "styled-system/patterns";
 
 export default function Error({
     error,
@@ -19,26 +19,22 @@ export default function Error({
     }, [error]);
 
     return (
-        <Box textAlign="center" py={10} px={6}>
-            <h1
-                className={css({
-                    color: "textColor",
-                })}
-            >
-                Something went wrong!
-            </h1>
-
-            <div className={css({ padding: "4" })} />
-
-            <Button
-                visual="solid"
-                onPress={
-                    // Attempt to recover by trying to re-render the segment
-                    () => reset()
-                }
-            >
-                Try again
+        <div
+            className={flex({
+                direction: "column",
+                align: "center",
+                justify: "center",
+                minHeight: "50vh",
+                gap: 4,
+            })}
+        >
+            <h2 className={css({ fontSize: "2xl", fontWeight: "bold" })}>エラーが発生しました</h2>
+            <p className={css({ color: "gray.500" })}>
+                申し訳ありませんが、記事の取得中にエラーが発生しました。
+            </p>
+            <Button onPress={reset} visual="outline">
+                もう一度試す
             </Button>
-        </Box>
+        </div>
     );
 }
