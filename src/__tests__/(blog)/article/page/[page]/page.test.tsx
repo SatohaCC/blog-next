@@ -13,7 +13,7 @@ jest.mock("@/lib/microcms", () => ({
     getPaths: jest.fn(),
 }));
 
-jest.mock("@/components/features/ArticleList/ArticleList", () => ({
+jest.mock("@/components/features/ArticleList", () => ({
     __esModule: true,
     default: jest.fn(() => <div data-testid="article-list">ArticleList</div>),
 }));
