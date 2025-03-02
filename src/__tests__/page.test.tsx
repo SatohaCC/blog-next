@@ -18,7 +18,7 @@ jest.mock("@/components/features/ArticleList", () => {
 });
 
 const MockPagination = jest.fn();
-jest.mock("@/components/features/Pagination/pagination", () => {
+jest.mock("@/components/features/Pagination", () => {
     const MockComponent = function () {
         MockPagination();
         return <div data-testid="pagination">Pagination</div>;

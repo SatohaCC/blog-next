@@ -1,5 +1,5 @@
 import ArticleList from "@/components/features/ArticleList";
-import Pagination from "@/components/features/Pagination/pagination";
+import Pagination from "@/components/features/Pagination";
 import { getList, getPaths } from "@/lib/microcms";
 import { PER_PAGE, siteName } from "@/lib/siteInfo";
 import { Metadata } from "next/types";

@@ -18,7 +18,7 @@ jest.mock("@/components/features/ArticleList", () => ({
     default: jest.fn(() => <div data-testid="article-list">ArticleList</div>),
 }));
 
-jest.mock("@/components/features/Pagination/pagination", () => ({
+jest.mock("@/components/features/Pagination", () => ({
     __esModule: true,
     default: jest.fn(() => <div data-testid="pagination">Pagination</div>),
 }));

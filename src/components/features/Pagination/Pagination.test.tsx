@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 
 import { PER_PAGE } from "@/lib/siteInfo";
-import Pagination from "./pagination";
+import Pagination from ".";
 import PaginationLink from "./PaginationLink";
 
 describe("Pagination", () => {
