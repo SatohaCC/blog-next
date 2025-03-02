@@ -1,6 +1,7 @@
 ---
 description: Next.js App Router best practices
 globs: *tsx, *ts
+alwaysApply: true
 ---
 ---
 description: Next.js App Router best practices
@@ -28,6 +29,7 @@ globs: *tsx, *ts
 - Use environment variables for configuration
 - Create small, reusable components following the Single Responsibility Principle and favor composition over inheritance
 - Use type aliases instead of interfaces for type definitions to ensure consistency and better union type support
+- use Panda CSS
 
 ## Accessibility (a11y)
 - Use semantic HTML elements.
