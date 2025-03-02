@@ -1,5 +1,5 @@
 import { getMenu } from "@/lib/microcms";
-import HeaderPresentation from "../components/features/Header/HeaderPresentation";
+import HeaderPresentation from "../components/features/Header";
 
 export const revalidate = 3600;
 

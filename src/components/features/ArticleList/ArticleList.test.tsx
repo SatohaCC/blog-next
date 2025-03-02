@@ -1,6 +1,6 @@
 import { ArticleType } from "@/lib/types";
 import { render, screen } from "@testing-library/react";
-import ArticleList from "./ArticleList";
+import ArticleList from ".";
 
 // モックデータ
 const mockContents: ArticleType[] = [

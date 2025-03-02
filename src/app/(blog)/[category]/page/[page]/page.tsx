@@ -1,4 +1,4 @@
-import ArticleList from "@/components/features/ArticleList/ArticleList";
+import ArticleList from "@/components/features/ArticleList";
 import Pagination from "@/components/features/Pagination/pagination";
 import { getList, getMenu, getPaths } from "@/lib/microcms";
 import { PER_PAGE, siteName } from "@/lib/siteInfo";

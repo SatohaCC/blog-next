@@ -8,7 +8,7 @@ jest.mock("@/lib/microcms", () => ({
 }));
 
 const MockArticleList = jest.fn();
-jest.mock("@/components/features/ArticleList/ArticleList", () => {
+jest.mock("@/components/features/ArticleList", () => {
     const MockComponent = function () {
         MockArticleList();
         return <div data-testid="article-list">ArticleList</div>;
