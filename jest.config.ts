@@ -29,6 +29,7 @@ const config: Config = {
     // styled-systemディレクトリをカバレッジ収集から除外
     collectCoverageFrom: [
         "src/__tests__/**/*.{js,jsx,ts,tsx}",
+        "src/app/**/*.{jsx,tsx}",
         "src/components/**/*.{js,jsx,ts,tsx}",
         //除外
         "!src/components/**/*.recipe.{js,jsx,ts,tsx}",
