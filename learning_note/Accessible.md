@@ -6,8 +6,10 @@
     - linkだけで対応するでもaccessibleは問題ない
 
 ### 暗黙的なロール一覧　（cursorで生成：未確認）
-以下はHTML要素とそれに対応する暗黙的なARIAロールの一覧です：
+Testing Libraryは内部的にaria-queryを使っていて、暗黙のロール三種はこれに依存している。
+（https://www.npmjs.com/package/aria-query）
 
+以下はHTML要素とそれに対応する暗黙的なARIAロールの一覧です：
 - `<a href="...">`：**link**
 - `<area href="...">`：**link**
 - `<article>`：**article**
