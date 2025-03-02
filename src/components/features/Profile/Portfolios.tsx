@@ -11,7 +11,7 @@ const containerStyle = css({
 
 const Portfolios = () => {
     return (
-        <section>
+        <section aria-label="portfolios">
             <BlockTitle title="ポートフォリオ" />
             <div className={containerStyle}>
                 {portfolioData.map((data, index) => {

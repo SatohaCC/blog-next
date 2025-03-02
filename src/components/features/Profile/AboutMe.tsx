@@ -19,7 +19,7 @@ const iconStyle = cva({
 
 const AboutMe = () => {
     return (
-        <section>
+        <section aria-label="about">
             <Flex alignItems="baseline" gap="2">
                 <BlockTitle title={myName} />
                 {iconsData.map((icon) => {
