@@ -69,7 +69,8 @@ describe("Home", () => {
 
     it("エラーが発生した場合、エラーコンポーネントが表示されること", async () => {
         // APIエラーを発生させる
-        (getList as jest.Mock).mockRejectedValue(new Error("API Error"));
+        const error = new Error("API Error");
+        (getList as jest.Mock).mockRejectedValue(error);
 
         // テスト用のラッパーコンポーネント
         const TestWrapper = async () => {
