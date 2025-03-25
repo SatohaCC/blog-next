@@ -33,7 +33,7 @@
         "@eslint/eslintrc": "^3.3.0",
         "@pandacss/dev": "^0.53.2",
         "@storybook/addon-essentials": "^8.6.4",
-        "@storybook/addon-interactions": "^8.6.4",
+        "@storybook/addon-interactions": "^8.6.9",
         "@storybook/addon-onboarding": "^8.6.4",
         "@storybook/addon-themes": "^8.6.4",
         "@storybook/blocks": "^8.6.4",
