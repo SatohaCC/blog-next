@@ -13,6 +13,7 @@ Next.jsを使って個人ブログを作成中です。
 - Jest & Testing Library - テスト環境
 - ESLint & Prettier - コード品質管理
 - Husky & lint-staged - Git フック管理
+- [Storybook](https://storybook.js.org/) - UIコンポーネント開発環境
 - [Cursor](https://www.cursor.com/ja) - AIアシスト機能付きエディタ
 
 ## 開発環境のセットアップ
@@ -36,6 +37,69 @@ npm run build
 
 [http://localhost:3000](http://localhost:3000)にアクセスして確認できます。
 
+## 利用可能なスクリプト
+
+| スクリプト | 説明 |
+|-----------|------|
+| `npm run dev` | 開発サーバーを起動 |
+| `npm run build` | 本番用ビルドを生成 |
+| `npm run start` | 本番用サーバーを起動 |
+| `npm run lint` | ESLintチェック |
+| `npm run lint:fix` | ESLintエラーを自動修正 |
+| `npm test` | テストを実行 |
+| `npm run test:watch` | テストをwatch モードで実行 |
+| `npm run test:coverage` | テストカバレッジレポートを生成 |
+| `npm run typecheck` | TypeScript型チェック |
+| `npm run storybook` | Storybookを起動 |
+| `npm run build-storybook` | Storybookをビルド |
+
+## プロジェクト構成
+
+```
+blog-next/
+├── src/
+│   ├── app/                    # Next.js App Router
+│   │   ├── (blog)/            # ブログ関連のページ
+│   │   │   ├── [category]/    # カテゴリー別ページ
+│   │   │   ├── article/       # 記事詳細ページ
+│   │   │   └── profile/       # プロフィールページ
+│   │   └── globals.css        # グローバルスタイル
+│   ├── components/            # Reactコンポーネント
+│   │   ├── features/          # 機能別コンポーネント
+│   │   └── ui/                # UI基盤コンポーネント
+│   ├── data/                  # 静的データ
+│   └── lib/                   # ユーティリティ関数
+├── public/                    # 静的ファイル
+├── learning_note/             # 学習メモ
+└── styled-system/             # Panda CSS生成ファイル
+```
+
+## テスト
+
+このプロジェクトはJestとTesting Libraryを使用してテストを実装しています。
+
+```bash
+# 全テストを実行
+npm test
+
+# watchモードでテストを実行
+npm run test:watch
+
+# カバレッジレポートを生成
+npm run test:coverage
+```
+
+## Storybook
+
+UIコンポーネントの開発とドキュメント化にStorybookを使用しています。
+
+```bash
+# Storybookを起動
+npm run storybook
+```
+
+[http://localhost:6006](http://localhost:6006)でStorybookにアクセスできます。
+
 ## 環境変数
 
 プロジェクトを実行するには、以下の環境変数の設定が必要です：
@@ -57,3 +121,10 @@ APIキーは秘密情報として扱い、公開リポジトリにコミット�
 
 - ブログ記事の作成・編集
 - カテゴリー管理
+
+## 開発ガイドライン
+
+- コードの品質を保つため、commit前に自動でESLintとPrettierが実行されます
+- テストの作成を推奨しています
+- アクセシビリティを重視した実装を心がけています
+- TypeScriptの型安全性を活用しています
